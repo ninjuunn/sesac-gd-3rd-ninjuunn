@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag의 종료</title>
+</head>
+<body>
+    <!-- form tag는 사용자의 입력을 받는 요소들을 묶어주는 태그-->
+    <!-- form tag의 속성이 있다. 대표저긍로 action, method -> 서버와의 통신과 관련된 속성 -> 일단 넘어갈 거예요-->
+    <!-- 사용자의 입력을 위한 태그를 form 태그 내부에 작성 -> 서버에 전달-->
+    <form>
+        <!-- input 사용자의 입력을 받는 태그-->
+        <!-- 다양한 type 속성이 있음 -->
+        <!-- input은 열린 태그 (닫는 태그 X)이기 때문에 꼭 / 닫아주기!-->
+        text : 
+        <input type="text" />
+
+        <br />
+
+        <!-- label tag이랑 -->
+        <!-- for 속성을 사용해 imput 태그와 연겨랄 수 있는 태그 -->
+        <!-- 해당 label을 클릭 할 경우 연결된 input에 focus를 하거나 체크할 수 있음-->
+        <!-- label과 함께 쓸 경우-->
+
+        <label for="ninjuunn">text with label : </label>
+        <input type="text" id="ninjuunn"/>
+
+        <br />
+
+        <label for="email">이메일</label>
+        <!-- placeholder : 예시 텍스트 입력 (연한 회색, 값이 들어가면 안보임)-->
+        <input type="email" id="email" placeholder="example@aa.co.ko"/>
+        
+        <br />
+
+        <label>
+            비밀번호
+            <input type="password" />
+
+        </label>
+
+        <br />
+
+        <input type="checkbox" /> 동의합니다 : 
+
+        <br />
+
+        <input type="checkbox" id="agree" checked />
+        <label for= "agree"></label>동의합니다. </label>
+
+        <br>
+        <!--  -->
+        <input type="checkbox" id="agree1" name="agree" disabled />
+        <label for= "agree1"></label>동의합니다.</label>
+
+        <h5>다음 중 input type이 아닌 것은? (모두 고르세요)</h5>
+
+        <input type="checkbox" name="input-checkox" id="text" />
+        <label for="text3">text</label>
+        <input type="checkbox" name="input-checkox" id="click" />
+        <label for="">click</label>
+        <input type="checkbox" name="input-checkox" id="bread" />
+        <label for="">bread</label>
+        <input type="checkbox" name="input-checkox" id="img" />
+        <label for="">img</label>
+        <input type="checkbox" name="input-checkox" id="date" />
+        <label for="">date</label>
+
+        <br>
+
+        <!-- radio는 그룹 중에서 하나만 선택항 수 있는 타입-->
+        <!-- checkbox는 여러개를 선택할 수 있는 타입-->
+        <!-- checkbox & radio는 같은 name을 부여해 그룹화해야 함-->
+
+        <input type="radio" name="radio" id="radio" />
+        <label for="radio">radio type</label>
+        <input type="radio" name="radio" id="radio2" />
+        <label for="radio2">radio type 2</label>
+        <input type="radio" name="radio" id="radio3" />
+        <label for="radio3">radio type 3</label>
+
+        <br>
+
+        <input type="radio" id="radio11" />
+        <label for="radio11">radio type</label>
+        <input type="radio" id="radio22" />
+        <label for="radio22">radio type 22</label>
+        <input type="radio" id="radio33" />
+        <label for="radio33">radio type 33</label>
+
+        <br>
+
+        <h5> 다음 중 img 태그의 속성인 것은?</h5>
+
+        <input type="radio" name="radioo" id="title" />
+        <label for="radio">title</label>
+        <input type="radio" name="radioo" id="alt" />
+        <label for="radio">alt</label>
+        <input type="radio" name="radioo" id="mouse" />
+        <label for="radio">mouse</label>
+        <input type="radio" name="radioo" id="value" />
+        <label for="radio">value</label>
+
+        <br>
+
+        <label for="color">색상을 선택해주세요.</label>
+        <input type="color" id="color" />
+
+        <br>
+
+        <label for="range">범위를 지정해주세요.</label>
+        <input type="range" id="ranfe" />
+
+        <br>
+
+        <label for="file">file를 업로드해주세요.</label>
+        <input type="file" id="file"> 
+
+        <br>
+        <!-- number type은 input 창 내부에 숫자 이외의 값이 입력되지 않음 -->
+        <!-- input 창 내부 오른편에 count 값을 병견시키는 화살표 자동으로 생성-->
+        <label for="number">숫자를 입력해주새요.</label>
+        <input type="number" id="number" />
+
+        <br>
+
+        <label for="date">생년월일을 입력해주세요.</label>
+        <input type="date" id="date" /> 
+
+        <br>
+
+        <label for="date-time">시간 포함 생년월일을 입력해주세요.</label>
+        <input type="datetime-local" id="date-time" />
+
+        <br>
+
+        <!-- 버튼 만들기-->
+        <!-- 방법1. input tag의 button type -->
+        <!-- 열린 태그이기 때문에 내부에 자식 요소를 만들 수 있음 -->
+        <!-- 버튼 내부의 content는 value 속성을 사용해 부여 -->
+
+        <input type="button" value="버튼" />
+
+        <!-- 방법2. input 태그의 submit type -->
+        <!-- value를 지정하지 않아도 기본적으로 "제출"이라는 값이 들어감 -->
+        <!-- form tag 내의 모든 input 값을 서버에 전송 (Javascript 없아)-->
+
+        <input type="submit" value="재출" />
+
+        <!-- 방법3. button tag 사용 -->
+        <!-- 여는 태그와 닫는 태그가 있어 자유롭게 스타일링 및 활용 가능 -->
+
+        <button>button tag으로 만든 버튼</button>
+        <button>button tag으로 만든 버튼
+        <div style="color:red">다양하게 사용 할 수 있다</div>
+        </button>
+
+        <br>
+        <!-- cols : 가로 너비 속성 -->
+        <!-- rows : 세로 너비 속성 -->
+        <label for="textarea">많은 양의 텍스트를 받을 때 사용하는 textarea</label>
+        <textarea 
+        id="textarea" 
+        cols="30" 
+        rows="10" 
+        placeholder="내용을 입력해주세요" ></textarea>  
+
+       <br /> <br /> <br /> 
+    
+       <select name="fruit">
+        <optgroup label="red">
+            <option value="apple">사과</option>
+            <option value="strawberry">딸기</option>
+            <option value="cherry">체리</option>
+        </optgroup>
+
+        <optgroup label="other">
+            <option value="banana">바나나</option>
+            <option value="orange">오렌지</option>
+            <option value="kiwi">키위</option>
+        </optgroup>
+       </select>
+
+       <select>
+        <option value="female">female</option>
+        <option value="male">male</option>
+       </select>
+        
+    
+       <h1>제출용 폼 만들기 실습</h1>
+
+       <h3>설문조사</h3>
+
+       <label for="name">이름</label> 
+       <input type="text">
+       
+       <br>
+
+       <label for="email">이메일</label> 
+       <input type="email" id="email" placeholder="example@aa.co.ko"/>
+
+       <br>
+
+       <h4>나이</h4>
+
+       <input type="radio" id="10" />
+        <label for="10">10대</label>
+        
+        <input type="radio" id="20" />
+        <label for="20">20대</label>
+        
+        <input type="radio" id="30" />
+        <label for="30">30대</label>
+
+        <input type="radio" id="40" />
+        <label for="40">40대</label>
+
+        <input type="radio" id="50" />
+        <label for="50">50대</label>
+
+        <input type="radio" id="60" />
+        <label for="60">60대</label>
+
+        <input type="radio" id="이상" />
+        <label for="이상">이상</label>
+
+        <br>
+
+        <h2>원하는 강의 (복수응답가능합니다.)</h2>
+
+        <input type="checkbox">
+        <label for="text">html</label>
+        
+        <input type="checkbox">
+        <label for="text">Javascript</label>
+
+        <input type="checkbox">
+        <label for="text">css</label>
+
+        <br> <br>
+<br />
+        <textarea 
+        id="textarea1" 
+        cols="130" 
+        rows="10" 
+        placeholder="하고 싶은 말을 써주세요." ></textarea>  
+
+        <br>
+
+         <input type="submit" value="재출" />
+
+        
+       
+
+
+
+
+        
+    </form>
+</body>
+</html>
