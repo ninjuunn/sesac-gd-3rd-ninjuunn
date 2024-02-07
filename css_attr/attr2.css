@@ -1,0 +1,32 @@
+.google {
+    @font-face {
+    font-family: 'SOGANGUNIVERSITYTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SOGANGUNIVERSITYTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+;
+}
+
+.google {
+    font-family: "seolleimcool-SemiBold", sans-serif;
+}
+
+.sentence {
+    font-weight: 700;
+    /* 글씨체마다 제공되는 font-weight 값이 모두 제각각이기 때문에 ... */
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration: underline;
+
+    /* 줄 간 간격 조정 대체로 배수를 ... */
+
+    line-height: 1;
+}
+
+.line-height {
+    /* */
+    line-height: 50px;
+    color: violet;
+}
