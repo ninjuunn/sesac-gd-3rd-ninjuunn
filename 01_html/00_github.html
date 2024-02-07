@@ -1,0 +1,19 @@
+<!-- 
+
+git config --global init.defaultBranch main : 글로벌 범위에서 자동으로 생성되는 기본 브랜치 이름 main으로 지정
+git config --global user.name "이름" : 글로벌 범위에서 git에 반영될 사용자 이름 지정
+git config --global user.email "이메일" : 글로벌 범위에서 git에 반영될 사용자 이메일 지정
+git config --global --list : 글로벌 범위에 저장된 기본 설정을 리스트 보기
+echo : 출력 or 파일 생성 or 있는 파일이라면 기존 내용에 입력된 내용 추가(가장 마지막에)
+echo "abcd" >> README.md : 현 위치에서 README.md라는 파일이 있다면 가장 마지막 줄에 "abcd"추가하거나 
+                           README.md 파일이 없다면 해당 파일을 만들고, "abcd"라는 텍스트를 저장
+git init : git 버전관리 시스템에서 새로운 git 저장소(repository)를 초기화
+git remote -v : 연결된 github 주소 확인
+git add [변경된 파일명] : 변경된 파일을 staging 영역으로 올림
+git commit -m "커밋 메시지" : staging 영역에 저장된 파일을 local repository에 올림 / 커밋 메시지는 
+                           해당 커밋의 변경사항을 쉽게 알아볼 수 있도록 작성하는 메모
+git push origin main : 현재 local repo에 있는 변경사항을 main이라는 remote repo의 브랜치에 반영시킴
+git pull origin main : remote repo의 main 브랜치 내용을 가져옴
+git clone 가져올 remote repo URL : 내 컴퓨터에 해당 remote repo의 코드와 파일들을 모두 가져옴 (연결도 자동으로 됨) 
+
+-->
