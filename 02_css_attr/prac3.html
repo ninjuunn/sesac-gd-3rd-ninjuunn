@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <!-- gertee zaawal oilgoj hiih -->
+
+    <style>
+
+        .container {
+            height: 500px;
+            width: 500px;
+            background-color: brown;
+            position: fixed;
+        }
+        
+        .item1 {
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            position: relative;
+            left: 50px;
+            top: 30px;
+        }
+
+        .item2 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            position: relative;
+            right: 30px;
+            bottom: 100px;
+        }
+
+        .item3 { 
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            position: absolute;
+            right: 100px;
+            top: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- 
+        실습 relative / absolute / fixed
+• 컨테이너의 크기 500px, 500px
+• 각 item의 크기 100px, 100px
+• Item 1 은 자기 자신을 기준으로 왼쪽 50px, 위쪽 30px 에 위치
+• Item 2 는 컨테이너를 기준으로 오른쪽 30px, 아래쪽 100px 에 위치
+• item 3 는 뷰포트를 기준으로 오른쪽 100px, 위 100px 에 위치 시키기 
+-->
+<div class="container">container</div>
+<div class="item1">item1</div>
+<div class="item2">item2</div>
+<div class="item3">item3</div>
+</body></html>
+

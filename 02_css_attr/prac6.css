@@ -1,0 +1,46 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.item1 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 3;
+}
+
+.item2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(159, 127, 255);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+
+.item3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(228, 255, 206);
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 2;
+}
+
+/*
+    실습 요소 쌓임 순서 및 z-index
+
+• 500px 500px container 클래스 선언
+• 컨테이너 안에 100px 100px 아이템1, 2, 3 div 선언
+• 아이템 2는 top, left 30px
+• 아이템 3은 top, left 60px
+• 아이템 3, 2, 1 순서대로 보이도록 설정
+• 아이템 1, 3, 2 순서대로 보이도록 설정
+     */
+

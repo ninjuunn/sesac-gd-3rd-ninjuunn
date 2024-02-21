@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습 flex-wrap</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+            display: flex;
+        }
+
+        .item {
+            height: 100px;
+            width: 100px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        .item1 {
+            background-color: aliceblue;
+        }
+        .item2 {
+            background-color: rgb(171, 211, 246);
+        }
+        .item3 {
+            background-color: rgb(243, 220, 196);
+        }
+        .item4 {
+            background-color: rgb(210, 249, 187);
+        }
+        .item5 {
+            background-color: rgb(194, 231, 251);
+        }
+        .item6 {
+            background-color: rgb(182, 250, 240);
+        }
+        .item7 {
+            background-color: rgb(245, 202, 227);
+        }
+        .item8 {
+            background-color: rgb(231, 243, 182);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">container
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+    </div>
+
+    <!-- 
+        실습 flex-wrap
+• 500px 500px 컨테이너 선언
+• 100px 100px 아이템 div 8개 선언
+• 컨테이너 안에 한 줄이 되도록 설정
+• 해당 아이템을 가로, 세로 수직 정렬하기
+• 컨테이터 안에 두 줄이 되도록 설정
+• 해당 아이템을 하나로 뭉쳐서 가로, 세로 수직 정렬하기
+• 해당 아이템을 각각의 flex 줄에 가로, 세로 수직 정렬하기
+     -->
+</body>
+</html>
