@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <style>
+        * {
+            border: 1px solid black;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div {
+            background-color: rgb(241, 191, 125);
+            width: 1920px;
+            height: 720px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+            position: relative; 
+            border-radius: 50%;
+
+            /* 참고) 배경색 그라데이션 및 그림자 적용 */
+            background: linear-gradient(45deg, yellow pink green);
+            box-shadow: -5px 5px 10px inset rgb(171, 170, 170, 0.5); 
+
+
+            /* animation-name: box-ani;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear; */
+
+            animation: box-ani 10s linear 1
+        }
+
+        @keyframes box-ani {
+          0% {
+            transform: translate(0px);
+          }
+          25% {
+            transform: translate(calc(100vw - 100px), 0px));
+          }
+          50% {
+            transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+          }
+
+          75% {
+            transform: translate{0, calc(100vh - 100px));
+          }
+
+          100% {
+            transform: translate(0px);
+          }
+        }
+
+        h2 {
+            margin-left: 100vh - 100px;
+        }
+
+        @keyframes box-ani2 {
+            100% {
+                bottom : 1350px;
+            }
+
+            100% {
+                bottom: 700px;
+            }
+        }
+
+        @keyframes box-ani3 {
+
+        }
+
+        p {
+            animation: slidein 3s infinite ;
+
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+    <h2>글자 움직이기</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis impedit suscipit modi minus commodi exercitationem repellendus a accusantium! Deleniti eos quis quidem hic? Fuga debitis suscipit, voluptatibus obcaecati odio consectetur?
+    </p>
+</body>
+</html>
+
+
+<!-- 
+
+    .box {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: relative;
+
+    /* animation 사용 */
+    animation-name: my-ani;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes my-ani {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 200px;
+    }
+
+    50% {
+        left: 400px;
+    }
+
+    75% {
+        left: 200px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.bounce-ball1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 0;
+    background-color: lightblue;
+    border-radius: 50%;
+
+    /* animation-name: bounce1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; -> animation이 더 자연스럽게 연결될 수 있도록 함!
+    */
+
+    /* 단축 property */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* direction 기본 값이 alternative이다 */
+    animation: bounce1 1s ease-in infinite alternate ;
+}
+
+@keyframes bounce1 {
+    to {
+        top: 0;
+    }
+
+    from {
+        top: 300px;
+    }
+
+
+}
+
+.bounce-ball2 {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    position: absolute;
+    border-radius: 50%;
+
+    animation-name: bounce2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+
+    /* animation: bounce2 2s infinite; */
+
+}
+
+@keyframes bounce2 {
+    from, to {
+        bottom: 0;
+        animation-timing-function: ease-out;
+        /* 0px 에서 정상 속도로 시작해, 천천히 속도를 줄이면서 300px이 됨 */
+        width: 60px;
+    }
+
+    50% {
+        width: 100px;
+        bottom: 300px;
+        animation-timing-function: ease-in;
+        /* 300px 에서 천천히 시작해, 0px 로 가면서 정상 속도로 감 */
+    }
+}
+
+
+ -->

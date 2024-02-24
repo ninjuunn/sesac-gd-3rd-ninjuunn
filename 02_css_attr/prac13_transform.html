@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습 다양한 transform 함수 사용하기</title>
+    <style>
+        .h2 {
+            text-align: center;
+        }
+
+        .container {
+            background-color: lightblue;
+            margin: 20px;
+            padding: 20px;
+
+        }
+
+        .rec {
+            transition: 1s;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(202, 248, 248);
+            border: 1px solid;
+            box-sizing: border-box;
+            margin: 10px
+            
+          
+        }
+
+        .rec1:hover {
+            width: 200px ;
+        }
+
+        .rec2:hover {
+            transform: skewY(45deg) translateX(50%);
+        }
+
+        .rec3:hover {
+            background-color: red;
+            border-radius: 50%;
+            transform: translateX(300px) rotate(180deg);
+        }
+
+        .rec4:hover {
+            background-color: yellow;
+            transform: rotateY(360); scale: 2; perspective: 200px; translate: 25px
+
+        }
+
+    </style>
+</head>
+<body>
+    <h2>실습 다양한 transform 함수 사용하기</h2>
+    <div class="container">
+        <div class="rec rec1"></div>
+        <div class="rec rec2"></div>
+        <div class="rec rec3"></div>
+        <div class="rec rec4"></div>
+    </div>
+</body>
+</html>

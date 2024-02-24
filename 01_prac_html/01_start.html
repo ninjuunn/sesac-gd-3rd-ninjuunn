@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start html</title>
+</head>
+<body>
+    <h1>h1 HTML</h1>
+    <h2>h2 HTML</h2>
+    <h3>h3 HTML</h3>
+    <h4>h4 HTML</h4>
+    <h5>h5 HTML</h5>
+    <h6>h6 HTML</h6>
+
+    <p>paragraph : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus recusandae assumenda itaque iure ratione placeat dolores blanditiis. Incidunt odio, necessitatibus, atque consectetur repellendus eaque beatae corporis ea porro quos quibusdam!</p>
+
+    <br>
+
+    <hr>
+
+    <div style="background-color: red;"> span의 parent
+        <span style="background-color: antiquewhite;">div의 child</span>
+    </div>
+    <span style="background-color: bisque;">div의 sibling</span>
+    <hr> 
+    <hr>
+
+    <h2>tag html</h2>
+
+    <h4>ul의 type: disc(default), square, circle, none</h4>
+    <h5>type="disc"</h5>
+    <ul type="disc">
+        <li>disc(default)</li>
+        <li>square</li>
+        <li>circle</li>
+        <li>none</li>
+    </ul>
+    <h5>type="square"</h5>
+    <ul type="square">
+        <li>disc(default)</li>
+        <li>square</li>
+        <li>circle</li>
+        <li>none</li>
+    </ul>
+    <h5>type="circle"</h5>
+    <ul type="circle">
+        <li>disc(default)</li>
+        <li>square</li>
+        <li>circle</li>
+        <li>none</li>
+    </ul>
+    <h5>type="none"</h5>
+    <ul type="none">
+        <li>disc(default)</li>
+        <li>square</li>
+        <li>circle</li>
+        <li>none</li>
+    </ul>
+
+    <h4>ol의 type: 1(default), a, A, i, I</h4>
+    <h4>ol의 start: 시작 값을 지정</h4>
+    <h4>ol의 reversed: 역순으로 변경 </h4>
+    <!-- <ol type="1" start="5" reversed></ol> -->
+    <ol type="1" start="1">
+        <h3>오늘 공부 내용</h3>
+        <li>start html</li>
+        <li>tag html</li>
+        <li>form html</li>
+        <li>css</li>
+        <li>css prac</li>
+    </ol>
+
+    <ol type="a" start="1">
+      <h2>아이스 카페라떼 만들기</h2>
+      <li><strong>우유</strong>를 180ml 컵에 넣습니다.</li>
+      <li> <i>얼음</i>을 가득 넣습니다.</li>
+      <li> <i>에스프레소 샷</i>을 넣어주면!</li>
+      <li> 완성입니다. 맛있게 드세요.</li>
+    </ol>
+
+    <hr>
+
+    <h2>목록 중첩</h2>
+
+    <ul type="none">
+        <h4>음식 목록</h4>
+        <li> 양식
+            <ul>
+                <li>파스타</li>
+                <li>피자
+                    <ul>
+                        <li>츠지 피자</li>
+                        <li>고구마 피자</li>
+                        <li>파인애플 피자</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h2>a href: URL | target: _blanc(new tab) _self(default) | title : 호버 값을 보여줌 </h2>
+
+    <a href="https://naver.com" title="기본 target속성의 값은 _self"
+      >네이버로 이동(_self)</a
+    >
+    <a href="https://google.com" target="_blank">구글로 이동(_blank)</a>
+    <a href="./01_start_html.html">폴더 내의 html 파일로 이동 가능</a>
+
+    <hr>
+
+    <h2>form tag의 종료</h2>
+
+    <form>
+        <h3>입력 값을 받는 input 태그 </h3>
+        <h4>input의 type</h4>
+        <ul type="disc">
+            <li>button</li>
+            <li>text</li>
+            <li>email</li>
+            <li>password</li>
+            <li>checkbox</li>
+            <li>radio</li>
+            <li>date</li>
+            <li>color</li>
+            <li>range</li>
+            <li>file</li>
+        </ul>
+
+        text <input type="text" value="default" />
+        <br> <br/>
+
+        <label for="one">with label:</label>
+        <input type="text" id="one" />
+        <br> <br/>
+
+        <label for="email">email</label>
+        <input type="text" id="email" placeholder="example@aa.co.kr">  
+        <br> <br/>
+
+        <!-- label의 for 속성을 사용하지 않고 암시적으로 연결하는 방법 -->
+        <label>
+        비밀번호
+        <input type="password" />
+        </label>
+        <br> <br />
+
+        <label> password
+            <input type="password">
+        </label>
+        <br> <br/>
+
+        <input type="checkbox" name="1"/> 동의합니다
+        <br>
+
+        <!-- checked : 자동으로 체크된 상태 -->
+        <input type="checkbox" id="agree" name="agree" checked />
+        <label for="agree">동의합니다.</label>
+        <br />
+
+        <!-- disabled : 비활성화 -->
+        <input type="checkbox" id="agree1" name="agree" disabled />
+        <label for="agree1">동의합니다.</label>
+        <br />
+
+        <h5>다음 중 input type이 아닌 것을 모두 고르시오?</h5>
+        <input type="checkbox" id="1" />
+        <label for="1">text</label> 
+        <input type="checkbox" id="2" checked/>
+        <label for="2">click</label>
+        <input type="checkbox" id="3" checked/>
+        <label for="3">bread</label>
+        <input type="checkbox" id="4" checked/>
+        <label for="4">img</label>
+        <input type="checkbox" id="5" />
+        <label for="5">date</label>
+        <br/>
+
+        <h5>다음 중 이미지 태그의 속성은?</h5>
+        <input type="radio" name="radio" id="radio1">
+        <label for="radio1">title</label>
+        <input type="radio" name="radio" id="radio2">
+        <label for="radio2">alt</label>
+        <input type="radio" name="radio" id="radio3">
+        <label for="radio3">mouse</label>
+        <input type="radio" name="radio" id="radio4">
+        <label for="radio4">value</label>
+
+        <!-- 실습 4 -->
+
+        <h2>제출용 폼 만들기</h2>
+        <h3>설문조사</h3>
+
+        이름 <input type="text"> 
+        <br><br/>
+        이메일 <input type="email" placeholder="love@example.com">
+        <br> <br/>
+
+        나이 
+        <br> <br/>
+        <input type="radio" name="one" id="10">
+        <label for="10">10대</label>
+        <input type="radio" name="one" id="20">
+        <label for="20">20대</label>
+        <input type="radio" name="one" id="30">
+        <label for="30">30대</label>
+        <input type="radio" name="one" id="40">
+        <label for="40">40대</label>
+        <input type="radio" name="one" id="50">
+        <label for="50">50대</label>
+        <input type="radio" name="one" id="60">
+        <label for="60">60대</label>
+        <br><br/> <br>
+
+        원하는 강의 (복수응답 가능)
+        <br> <br/>
+        <input type="checkbox" id="1" />
+        <label for="1">html</label>
+        <input type="checkbox" id="2" />
+        <label for="2">JavaScript</label>
+        <input type="checkbox" id="3" />
+        <label for="3">css</label>
+        <br><br/>
+
+        <label for="textarea"></label>
+        <textarea 
+        name="textarea" 
+        id="textarea" 
+        cols="100" 
+        rows="10"
+        placeholder="내용을 입력해주세요"></textarea>
+
+        <input type="button" value="제출">
+        <br><br/>
+        <hr>
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+    
+</body>
+
+</html>
