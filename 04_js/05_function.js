@@ -88,3 +88,21 @@ function hello(name) {
 
 const username = "layla";
 hello(username);
+
+// 실습 과제
+// multifly 함수 만들기
+function multifly(num1, num2) {
+  return num1 * num2;
+  console.log // return 문 다음 코드는 실행이 안된다.
+}
+
+console.log(multifly(7, 3)); // 21
+console.log(multifly(4, 10)); // 40 
+
+// square 함수 만들기 
+function square(num) {
+  return num ** 2; 
+}
+
+console.log(square(4))
+
