@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 연습 24.03.04</title>
+    <link rel="stylesheet" href="./02_css.css">
+    <style>
+        /* * -> 전체 선택자 */
+        * {
+            background-color: pink;
+            color: black;
+        }
+
+        /* 태그 선택자 */
+        li {
+            color:rgb(9, 55, 95)
+        }
+
+        /* class 선택자 */
+        .red {
+            color: red;
+        }
+
+        /* id 선택자 */
+        #li-orange {
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h2>css 선택자</h2>
+    <div>
+       <li>* -> 전체 선택자</li>
+       <li> 태그 선택자</li>
+       <li>class 선택자</li>
+       <li>id 선택자</li>
+    </div>
+    <div>
+        <ul>
+            <li class="red" id="red">apple</li>
+            <li class="red">strawberry</li>
+            <li id="li-orange">orange</li>
+        </ul>
+        <div>carrot</div>
+        <p class="red">tomato</p>
+        <span>orange</span>
+    </div>
+
+    <h2></h2>
+</body>
+</html>
